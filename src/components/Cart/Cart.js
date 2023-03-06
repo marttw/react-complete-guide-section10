@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from '../UI/Modal';
 import classes from './Cart.module.css';
 
-const Cart = () => {
+const Cart = (props) => {
   const cartItems = (
     <ul className={classes['cart-items']}>
       {[{ id: 'c1', name: 'Sushi', amount: 2, price: 12.99 }].map((item) => (
